@@ -5,27 +5,39 @@
       background-color: $i3-white;
       width: 50px;
       height: 50px;
+      border: solid $i3-gray 1px;
+      color: $i3-gray;
+    }
+    .mat-step-icon-state-done, .mat-step-icon-state-edit, .mat-step-icon-selected {
+      background-color: $i3-white;
+      width: 50px;
+      height: 50px;
       border: solid $i3-blue 1px;
       color: $i3-blue;
+      svg {
+        path {
+          stroke: $i3-blue ;
+        }
+        rect {
+          stroke: $i3-blue ;
+        }
+      }
     }
     .mat-step-text-label{
       color: $i3-blue;
+      text-align: center;
+      margin-top: 0.2rem;
     }
     .mat-horizontal-stepper-header{
       flex-direction: column;
-    }
-    .mat-step-text-label {
-      text-align: center;
-      margin-top: 0.2rem;
     }
     .mat-stepper-horizontal-line {
       margin-bottom: 1rem;
     }
 
-     .mat-stepper-horizontal-line {
+    /* .mat-stepper-horizontal-line {
       border: 1px solid $i3-blue;
-    }
-
+    }*/
   }
 
 }

@@ -8,12 +8,14 @@ import { DashboardComponent } from './components/ui/dashboard/dashboard.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatStepperModule} from "@angular/material/stepper";
 import {MatIconModule} from "@angular/material/icon";
+import { CalenderComponent } from './components/ui/calender/calender.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StepperComponent,
-    DashboardComponent
+    DashboardComponent,
+    CalenderComponent
   ],
   imports: [
     BrowserModule,

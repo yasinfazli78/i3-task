@@ -45,6 +45,9 @@
       .mat-step-icon-selected{
         border: solid $i3-blue 1px;
       }
+      .mat-step-text-label{
+        display: none;
+      }
     }
   }
 

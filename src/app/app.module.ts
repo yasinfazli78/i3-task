@@ -9,21 +9,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatStepperModule} from "@angular/material/stepper";
 import {MatIconModule} from "@angular/material/icon";
 import { CalenderComponent } from './components/ui/calender/calender.component';
+import { PaymentComponent } from './components/ui/payment/payment.component';
+import {MatCheckboxModule} from "@angular/material/checkbox";
 
 @NgModule({
   declarations: [
     AppComponent,
     StepperComponent,
     DashboardComponent,
-    CalenderComponent
+    CalenderComponent,
+    PaymentComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatStepperModule,
-    MatIconModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatStepperModule,
+        MatIconModule,
+        MatCheckboxModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

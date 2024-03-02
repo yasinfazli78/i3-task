@@ -24,7 +24,6 @@ export class StepperComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.matStepperIcons = this.stepperIcons.toArray();
-    debugger
   }
 
 }

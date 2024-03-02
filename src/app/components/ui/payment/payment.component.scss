@@ -1,0 +1,19 @@
+@import "src/assets/colors";
+
+:host {
+
+  .checkbox-container{
+    display: flex;
+    flex-direction: column;
+  }
+  ::ng-deep {
+    .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+      background-color: $i3-green !important;
+      border-radius: 50%;
+    }
+    .mat-checkbox-frame {
+      border-width: 1px;
+      border-radius: 50%;
+    }
+  }
+}

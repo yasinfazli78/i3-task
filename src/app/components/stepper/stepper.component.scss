@@ -1,7 +1,9 @@
 @import "src/assets/colors";
 :host {
   ::ng-deep{
-
+    .mat-stepper-horizontal, .mat-stepper-vertical {
+      background-color: $i3-base;
+    }
     .mat-step-icon {
       background-color: $i3-white;
       width: 50px;
@@ -35,10 +37,20 @@
     .mat-stepper-horizontal-line {
       margin-bottom: 1rem;
     }
+  }
 
-    /* .mat-stepper-horizontal-line {
-      border: 1px solid $i3-blue;
-    }*/
+  @media (max-width: 900px) {
+    ::ng-deep {
+      .mat-step-icon{
+        background-color: $i3-base;
+        border: hidden;
+        width: 40px;
+        height: 40px;
+      }
+      .mat-step-icon-selected{
+        border: solid $i3-blue 1px;
+      }
+    }
   }
 
 }

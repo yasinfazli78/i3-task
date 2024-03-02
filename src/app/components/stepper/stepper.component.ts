@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ElementRef, OnInit, TemplateRef, ViewChild, ViewChildren} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, Input, OnInit, TemplateRef, ViewChild, ViewChildren} from '@angular/core';
 import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import {MatStepper} from "@angular/material/stepper";
 
@@ -11,7 +11,7 @@ import {MatStepper} from "@angular/material/stepper";
   }]
 })
 export class StepperComponent implements OnInit, AfterViewInit {
-
+  @Input() stepsOptions!: any;
   @ViewChild('stepper') stepper!: MatStepper;
   @ViewChildren('stepperIcons')stepperIcons !: TemplateRef<ElementRef> | any;
   matStepperIcons!: TemplateRef<ElementRef>[];

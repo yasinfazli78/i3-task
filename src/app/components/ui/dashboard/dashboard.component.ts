@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+export interface StepsOptionModel {
+  label: string;
+  state: string;
+  iconUrl: string;
+}
 @Component({
   selector: 'i3-dashboard',
   templateUrl: './dashboard.component.html',
@@ -7,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  stepsOptions = [
+  stepsOptions: StepsOptionModel[] = [
     {
       label: 'تقویم',
       state: 'calender',

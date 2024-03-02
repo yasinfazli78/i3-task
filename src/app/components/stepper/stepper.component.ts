@@ -1,6 +1,7 @@
 import {AfterViewInit, Component, ElementRef, Input, OnInit, TemplateRef, ViewChild, ViewChildren} from '@angular/core';
 import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import {MatStepper} from "@angular/material/stepper";
+import {StepsOptionModel} from "../ui/dashboard/dashboard.component";
 
 @Component({
   selector: 'i3-stepper',
@@ -11,7 +12,7 @@ import {MatStepper} from "@angular/material/stepper";
   }]
 })
 export class StepperComponent implements OnInit, AfterViewInit {
-  @ViewChild('stepper') stepper!: MatStepper;
+  @Input() stepsOptions!: StepsOptionModel[];
   @ViewChildren('stepperIcons')stepperIcons !: TemplateRef<ElementRef> | any;
   matStepperIcons!: TemplateRef<ElementRef>[];
 

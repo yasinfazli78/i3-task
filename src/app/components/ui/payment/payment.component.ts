@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'i3-payment',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaymentComponent implements OnInit {
 
+  @Input() stepIndex!: number;
+  @Input() label!: string;
+
+  rowWidth: number =  100;
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

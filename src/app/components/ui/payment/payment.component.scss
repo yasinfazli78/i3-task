@@ -1,10 +1,16 @@
 @import "src/assets/colors";
 
 :host {
-
+  .sm-label{
+    display: none;
+  }
   .checkbox-container{
     display: flex;
     flex-direction: column;
+    text-align: center;
+  }
+  .checkbox-container > .mat-checkbox {
+    margin: 0.2rem;
   }
   ::ng-deep {
     .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
@@ -14,6 +20,17 @@
     .mat-checkbox-frame {
       border-width: 1px;
       border-radius: 50%;
+    }
+    .mat-checkbox-layout .mat-checkbox-label {
+      margin-right: 0.3rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .sm-label{
+      display: block;
+      color: #005FBB;
+      font-size: 1.5rem;
     }
   }
 }

@@ -1,14 +1,16 @@
 
 <mat-stepper #stepper>
 
-  <mat-step state="calender" label="تقویم">
+  <mat-step #First state="calender"  label="تقویم">
+    <i3-payment *ngIf="stepper.selected ==First " [label]="'تقویم'"></i3-payment>
   </mat-step>
 
-  <mat-step state="information" label="جزییات">
+  <mat-step #Second state="information" label="جزییات">
+    <i3-payment *ngIf="stepper.selected == Second " [label]="'جزییات'"></i3-payment>
   </mat-step>
 
-  <mat-step state="payments" label="پرداخت">
-    <i3-payment></i3-payment>
+  <mat-step #Third state="payments" label="پرداخت">
+    <i3-payment *ngIf="stepper.selected ==Third " [label]="'پرداخت'"></i3-payment>
   </mat-step>
 
 

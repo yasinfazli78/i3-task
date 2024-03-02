@@ -7,6 +7,7 @@
   .checkbox-container{
     display: flex;
     flex-direction: column;
+    pointer-events: none;
   }
   .checkbox-container > .mat-checkbox {
     margin: 0.2rem;

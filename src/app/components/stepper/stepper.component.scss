@@ -12,15 +12,12 @@
     }
     .mat-step-icon {
       background-color: $i3-white;
-      width: 50px;
-      height: 50px;
+      width: 3.125rem;
+      height: 3.125rem;
       border: solid $i3-gray 1px;
       color: $i3-gray;
     }
     .mat-step-icon-selected {
-      background-color: $i3-white;
-      width: 50px;
-      height: 50px;
       border: solid $i3-blue 1px;
       color: $i3-blue;
     }
@@ -42,8 +39,8 @@
       .mat-step-icon{
         background-color: $i3-base;
         border: hidden;
-        width: 40px;
-        height: 40px;
+        width: 2.5rem;
+        height: 2.5rem;
       }
       .mat-step-icon-selected{
         border: solid $i3-blue 1px;

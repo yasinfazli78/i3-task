@@ -4,6 +4,12 @@
     .mat-stepper-horizontal, .mat-stepper-vertical {
       background-color: $i3-base;
     }
+    .mat-step-header.cdk-keyboard-focused,
+    .mat-step-header.cdk-program-focused
+    , .mat-step-header:hover:not([aria-disabled]),
+    .mat-step-header:hover[aria-disabled=false] {
+      background-color: $i3-base;
+    }
     .mat-step-icon {
       background-color: $i3-white;
       width: 50px;
@@ -11,20 +17,12 @@
       border: solid $i3-gray 1px;
       color: $i3-gray;
     }
-    .mat-step-icon-state-done, .mat-step-icon-state-edit, .mat-step-icon-selected {
+    .mat-step-icon-selected {
       background-color: $i3-white;
       width: 50px;
       height: 50px;
       border: solid $i3-blue 1px;
       color: $i3-blue;
-      svg {
-        path {
-          stroke: $i3-blue ;
-        }
-        rect {
-          stroke: $i3-blue ;
-        }
-      }
     }
     .mat-step-text-label{
       color: $i3-blue;

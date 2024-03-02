@@ -1,6 +1,12 @@
 @import "src/assets/colors";
 :host {
   ::ng-deep{
+
+    .mat-horizontal-stepper-content {
+      outline: 0;
+      text-align: center;
+    }
+
     .mat-stepper-horizontal, .mat-stepper-vertical {
       background-color: $i3-base;
     }

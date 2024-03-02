@@ -1,6 +1,7 @@
 @import "src/assets/colors";
 :host {
   ::ng-deep{
+
     .mat-step-icon {
       background-color: $i3-white;
       width: 50px;

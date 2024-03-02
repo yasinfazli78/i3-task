@@ -1,7 +1,7 @@
 
 <mat-stepper #stepper>
 
-  <!--<mat-step #First state="calender"  label="تقویم">
+  <mat-step #First state="calender"  label="تقویم">
     <i3-payment *ngIf="stepper.selected ==First " [label]="'تقویم'"></i3-payment>
   </mat-step>
 
@@ -11,10 +11,6 @@
 
   <mat-step #Third state="payments" label="پرداخت">
     <i3-payment *ngIf="stepper.selected ==Third " [label]="'پرداخت'"></i3-payment>
-  </mat-step>-->
-
-  <mat-step *ngFor="let step of stepsOptions"  [label]="step.label" [state]="step.state">
-    <ng-content select="{{step.state}}"></ng-content>
   </mat-step>
 
   <ng-template matStepperIcon="calender" #stepperIcons>
